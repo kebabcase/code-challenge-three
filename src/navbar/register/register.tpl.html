@@ -1,0 +1,73 @@
+<div class="modal register-modal">
+  <form ng-submit="$ctrl.onSubmit()">
+    <div class="modal-content grey-text text-darken-3">
+      <h4>Register</h4>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="fullname"
+                     class="validate"
+                     type="text"
+                     ng-model="$ctrl.register.fullname"
+                     pattern=".{3,100}"
+                     required>
+              <label for="fullname">
+                Full Name
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email"
+                     class="validate"
+                     type="email"
+                     ng-model="register.email"
+                     required>
+              <label for="email">
+                Email
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password"
+                     class="validate"
+                     type="password"
+                     ng-model="register.password"
+                     pattern=".{3,100}"
+                     required>
+              <label for="password">
+                Password
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="confirm"
+                     class="validate"
+                     type="password"
+                     ng-model="confirm"
+                     pattern=".{3,100}"
+                     required>
+              <label for="confirm">
+                Confirm Password
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat">
+        Cancel
+      </a>
+      <button type="submit"
+              class="modal-action waves-effect waves-green btn-flat">
+        Agree
+      </button>
+    </div>
+  </form>
+</div>

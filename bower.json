@@ -5,6 +5,10 @@
     "Mathew Kleppin <matkle414@gmail.com>"
   ],
   "license": "MIT",
+  "main": [
+    "web-forum.css",
+    "web-forum.js"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,17 +19,15 @@
   ],
   "dependencies": {
     "angular-ui-router": "~0.2.15",
-    "angular": "~1.4.3",
+    "angular": "^1.5.0",
     "materialize": "~0.96.1",
-    "angular-animate": "~1.4.3",
-    "angular-resource": "~1.4.3",
-    "angular-redactor": "~1.1.5",
-    "angular-route": "~1.4.3",
-    "angular-sanitize": "~1.4.3",
-    "multiline": "^1.0.2"
+    "angular-animate": "^1.5.0",
+    "angular-resource": "^1.5.0",
+    "angular-redactor": "^1.1.5",
+    "angular-route": "^1.5.0",
+    "angular-sanitize": "^1.5.0"
   },
   "resolutions": {
-    "angular": "1.4.3",
-    "angular-animate": "~1.4.3"
+    "angular": "^1.5.0"
   }
 }

@@ -1,0 +1,35 @@
+<div class="modal new-topic-modal">
+  <form name="submitTopic"
+        ng-submit="$ctrl.createNewTopic()">
+    <div class="modal-content">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="title"
+                 class="validate"
+                 type="text"
+                 ng-model="$ctrl.topic.title"
+                 pattern=".{3,100}"
+                 required>
+          <label for="title">
+            Title
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea ng-model="$ctrl.post.content"
+                    redactor>
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat">
+        Cancel
+      </a>
+      <button class="waves-effect waves-green btn-flat">
+        New Topic
+      </button>
+    </div>
+  </form>
+</div>

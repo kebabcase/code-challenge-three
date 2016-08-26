@@ -1,0 +1,46 @@
+<div class="modal login-modal">
+  <form ng-submit="$ctrl.onSubmit()">
+    <div class="modal-content grey-text text-darken-3">
+      <h4>Login</h4>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="loginEmail"
+                     class="validate"
+                     type="email"
+                     ng-model="$ctrl.login.email"
+                     required>
+              <label for="loginEmail">
+                Email
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="loginPassword"
+                     type="password"
+                     ng-model="$ctrl.login.password"
+                     required>
+              <label for="loginPassword">
+                Password
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat">
+        Cancel
+      </a>
+      <button type="submit"
+              class="modal-action waves-effect waves-green btn-flat">
+        Login
+      </button>
+    </div>
+  </form>
+</div>

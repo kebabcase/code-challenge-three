@@ -1,0 +1,36 @@
+<nav class="red darken-2">
+  <div class="nav-wrapper">
+    <a class="brand-logo" ng-cloak>
+      {{ $ctrl.logo }}
+    </a>
+    <a class="button-collapse"
+      data-activates="mobile-demo">
+      <i class="mdi-navigation-menu"></i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="waves-effect waves-light"
+             ng-click="$ctrl.openLoginModal()">
+          Login
+      </a></li>
+      <li><a class="waves-effect waves-light"
+             ng-click="$ctrl.openRegisterModal()">
+          Register
+      </a></li>
+    </ul>
+    <ul id="mobile-demo"
+        class="side-nav">
+      <li><a class="waves-effect waves-light"
+             ng-click="$ctrl.openLoginModal()">
+          Login
+      </a></li>
+      <li><a class="waves-effect waves-light"
+             ng-click="$ctrl.openRegisterModal()">
+          Register
+      </a></li>
+    </ul>
+  </div>
+</nav>
+
+<web-forum-login-modal login="$ctrl.login(fields)"></web-forum-login-modal>
+
+<web-forum-register-modal login="$ctrl.login(fields)"></web-forum-register-modal>

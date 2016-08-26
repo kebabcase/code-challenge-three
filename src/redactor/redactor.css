@@ -1,3 +1,7 @@
+.redactor_editor{
+  min-height: 300px;
+}
+
 .redactor_box {
 	position: relative;
 	overflow: visible;

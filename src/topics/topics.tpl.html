@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <web-forum-topic-card class="col s12"
+                          ng-repeat="topic in $ctrl.topics | orderBy: '-createdOn'"
+                          ng-click="$ctrl.goToPost(topic.id)"
+                          topic="topic">
+    </web-forum-topic-card>
+  </div>
+
+  <a class="btn-floating btn-large waves-effect waves-light red modal-trigger"
+      ng-click="$ctrl.openNewTopicModal()">
+    <i class="material-icons">add</i>
+  </a>
+</div>
+
+<web-forum-new-topic-modal current-user="$ctrl.currentUser"></web-forum-new-topic-modal>

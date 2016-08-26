@@ -14,7 +14,10 @@
 .idea
 .project
 .strong-pm
+.sass-cache
+client
 coverage
 node_modules
+bower_components
 npm-debug.log
 client/vendor
